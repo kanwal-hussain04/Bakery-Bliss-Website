@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>  
+<head>
+      <!-- for site layout -->
+<meta name="Bano Qabil Assignment" content="width=device-width", initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- STYLE TAG -->
+<style>
+    h1 { color: white; background-color:rgb(223, 127, 202); margin: 0; text-align: center;}
+    body {font-family: Arial;
+    font-size: 17px;
+    padding: 8px;}
+    *{
+        box-sizing: border-box;
+    }
+    .row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -16px;}
+
+    .col-25 {flex: 25%;}
+    .col-50 {flex: 50%;}
+    .col-75 {flex: 75%;}
+
+    .col-25, .col-50, .col-75 {
+        padding: 0 16px;
+    }
+
+.container {background-color: #f2f2f2;
+padding: 5px 20px 15px 20px;
+border: 1px solid lightgray; border-radius: 3px;}
+
+input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: ipx solid#ccc;
+    border-radius: 3px;
+}
+input[type=number] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: ipx solid#ccc;
+    border-radius: 3px;
+}
+
+label {margin-bottom: 10px; display: block;}
+
+.icon-container { margin-bottom: 20px; padding: 7px 0px; font-size: 24px;}
+.btn { background-color: #04AA6D;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor:pointer;
+    font-size: 17px;
+}
+.btn:hover{ background-color: #e697d5;}
+a {color: #2196f3;}
+hr { border: 1px solid lightgray;}
+span.price {  float: right; color: grey;}
+
+
+</style>
+</head>
+
+    <h1><i><b>Bakery Bliss-Sweet Moments Await: Order Here Form</b></i></h1>
+    <h2><a href="Menu.html"><b><i>See Menu Here</i></b></a></h2>
+    <div class="row">
+        <div class="col-75">
+            <div class="container">
+                <form action="/server-01'page.php">
+
+                    <div class="row">
+                        <div class="col-50">
+                            <h3> BILLING ADDRESS</h3>
+                            <label for="fname"><i class="fa fa-user"></i>&nbsp; Full Name</label>
+                            <input type="text" id="fname" name="Full Name" placeholder="Kanwal Hussain">
+                            <label for="email"><i class="fa fa-envelope">&nbsp; Email</i></label>
+                            <input type="text" id="email" name="email" placeholder="kanwalhussain04@gmail.com">
+                            <label for="address"><i class="fa fa-address-card-o">&nbsp; Address</i></label>
+                            <input type="text" id="address" name="address" placeholder="House# 218, 7th commercial street, DHA">
+                            <label for="city"><i class="fa fa-institution">&nbsp; City</i></label>
+                            <input type="text" id="city" name="city" placeholder="Karachi">
+
+                            <div class="row">
+                                <div class="col-50">
+                                    <label for="state"> State</label>
+                                    <input type="text" id="state" name="state" placeholder="Sindh">
+                                </div>
+                                <div class="col-50">
+                                    <label for="zip"> Zip</label>
+                                    <input type="number" id="zip" name="zip" placeholder="10078">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-50">
+                            <h3>PAYMENT</h3>
+                            <label for="fname">Accepted Cards</label>
+                            <div class="icon-container">
+                            <i class="fa fa-cc-visa" style="color: navy;"></i>
+                            <i class="fa fa-cc-amex" style="color: blue;"></i>
+                            <i class="fa fa-cc-mastercard" style="color: red;"></i>
+                            <i class="fa fa-cc-discover" style="color: orange;"></i>
+                            </div>
+                            <label for="cname"> Name On Card</label>
+                            <input type="text" id="cname" name="cname" placeholder="kanwal hussain">
+                            <label for="ccnum">Credit Card Number</label>
+                            <input type="number" id="ccnum" name="ccnum" placeholder="1111-2222-3333-4444">
+                            <label for="exp"> Exp Month</label>
+                            <input type="text" id="exp" name="exp" placeholder="October">
+                            <div class="row">
+                                <div class="col-50">
+                                    <label for="expyear"> Exp Year</label>
+                                    <input type="number" id="expyear" name="expyear" placeholder="2018">
+                                </div>
+                                <div class="col-50">
+                                    <label for="cvv"> CVV</label>
+                                    <input type="number" id="cvv" name="cvv" placeholder="354">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <label>
+                        <input type="checkbox" checked="checked" name="check"> Shipping address same as billing address
+                    </label>
+                    <input type="submit" value="Continue to Checkout" class="btn">
+                </form>
+            </div>
+        </div>
+        <div class="col-25">
+            <div class="container">
+                <h4>Cart <span class="price" style="color: black;"><i class="fa fa-shopping-cart"></i><b>4</b></span></h4>
+                <p><a href="https://th.bing.com/th/id/R.ca518d0b462e5773cfa391d0dafc1c83?rik=r5h7%2bhkUdutLFA&pid=ImgRaw&r=0"> Lemon Tart</a><span class="price">$15</span></p>
+                <p><a href="https://th.bing.com/th/id/R.ae4dd7d6dade5379d37cd89e872f284d?rik=cWhK7PR4ZRtM4A&riu=http%3a%2f%2fthesweetandsimplekitchen.com%2fwp-content%2fuploads%2f2020%2f04%2fIMG_8998-1-819x1024.jpg&ehk=zZ2TvGdZjXd2tlbQv2IOC2b3RNtE0WR3jj4di6BR6eE%3d&risl=&pid=ImgRaw&r=0"">Chocolate Cup Cake Basket</a><span class="price">$5</span></p>
+                <p><a href="https://th.bing.com/th/id/R.bf96cf3aa2b9d75ae9904924f3b36505?rik=ecnB22%2f6ZsUVhA&pid=ImgRaw&r=0" alt="cheesecake"">Cheese Cake</a><span class="price">$8</span></p>
+                <p><a href="https://th.bing.com/th/id/R.6ff4f1f3092c483034028a0358c158b4?rik=WdLcaUQ3Y5wKsQ&riu=http%3a%2f%2fcdn.theunlockr.com%2fwp-content%2fuploads%2f2009%2f10%2fEclair.gif&ehk=OtKOjcxA%2byK6wUROV0%2bYHYPR%2bcR1Vy0BKwC2kGfI%2br0%3d&risl=&pid=ImgRaw&r=0"">Eclair</a><span class="price">$2</span></p>
+                <hr>
+                <p>Total<span class="price" style="color: #000;"><b>$30</b></span></p>
+            </div>
+        </div>
+    
+           
+            
+    </body>
+    
+</html>
